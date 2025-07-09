@@ -1,9 +1,13 @@
 # Tapo SmartPlug Python Script for Zabbix
-This Python script enables Zabbix to read data from TP-Link TAPO SmartPlugs.  
+This Python script enables Zabbix to read data from TP-Link TAPO SmartPlugs.
 **Note:** The script is designed to monitor only one SmartPlug at a time.
 
+![zabbix_preview](picture0.png)
+
+![zabbix_preview](picture1.png)
+
 ## Tested SmartPlug
-- [x] Tapo P115  
+- [x] Tapo P115
 *(This is the only Tapo device I own, but the script should work with any TAPO SmartPlug featuring power monitoring.)*
 
 ## Usage
@@ -18,7 +22,7 @@ Configure these **environment variables**:
 ## Dependencies
 - [python-kasa](https://github.com/python-kasa/python-kasa)
 - [zabbix_sender](https://www.zabbix.com/download)
-- *(Optional)* [screen](https://www.gnu.org/software/screen/) for standalone execution
+
 
 ## Data Sent to Zabbix
 - [x] Device state
@@ -27,3 +31,9 @@ Configure these **environment variables**:
 - [x] Voltage (Volts)
 - [x] Today's energy consumption (kWh)
 - [x] Current month's energy consumption (kWh)
+
+## Docker Support
+This project is available as a Docker image:
+
+**📦 Image:** [`lay4play/tapo-smartplug-zabbix`](https://hub.docker.com/r/lay4play/tapo-smartplug-zabbix)
+
