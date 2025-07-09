@@ -9,7 +9,7 @@ This Python script enables Zabbix to read data from TP-Link TAPO SmartPlugs.
 ## Usage
 Configure these **environment variables**:
 - `TAPO_USER`: Email address used for Tapo app login
-- `TAPO_PASS`: Password used for Tapo app login
+- `TAPO_PASSWORD`: Password used for Tapo app login
 - `PLUG_IP`: Local IPv4 address of the SmartPlug
 - `ZABBIX_SERVER`: Zabbix server IP/Domain for data submission
 - `ZABBIX_HOSTNAME`: Hostname configured in Zabbix WebUI for the device
