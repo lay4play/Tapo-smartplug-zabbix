@@ -8,10 +8,11 @@ RUN apt-get update && \
         zabbix-sender \
         gcc \
         libffi-dev \
+	build-essential \
         libssl-dev && \
     pip install --no-cache-dir python-kasa && \
     # Clean up build deps & APT cache to slim the final image
-    apt-get purge -y --auto-remove gcc libffi-dev libssl-dev && \
+    apt-get purge -y --auto-remove gcc libffi-dev libssl-dev build-essential && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
